@@ -1,0 +1,20 @@
+{
+  "vars": {
+    "color-primary": {
+      "type": "value",
+      "value": "#963737"
+    },
+    "color-secondary": {
+      "type": "value",
+      "value": "#aa1291"
+    },
+    "color-tertiary": {
+      "type": "value",
+      "value": "#443397"
+    },
+    "color-state": {
+      "type": "value",
+      "value": "#4497f0"
+    }
+  }
+}

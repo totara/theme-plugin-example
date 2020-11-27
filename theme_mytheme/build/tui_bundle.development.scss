@@ -1,0 +1,17 @@
+/* full way of writing the selector, breaking it down into its BEM parts*/
+.mytheme { /* namespace*/
+  &__customTab { /* Block*/
+    &__text { /* Element*/
+      &--rendered { /* Modifier*/
+        color: var(--mytheme-color); /* this is set in `theme_mytheme/src/global_styles/_variables.scss`*/
+      }
+    }
+  }
+}
+/* condensed way of writing the selector...*/
+.mytheme__customTab__text--rendered {
+  color: var(--mytheme-color);
+}
+
+
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8vLi9jbGllbnQvY29tcG9uZW50L3RoZW1lX215dGhlbWUvc3JjL2NvbXBvbmVudHMvdGhlbWVfc2V0dGluZ3MvU2V0dGluZ3NGb3JtTXlUaGVtZS52dWUiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBbUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0EiLCJmaWxlIjoidHVpX2J1bmRsZS5kZXZlbG9wbWVudC5zY3NzIiwic291cmNlc0NvbnRlbnQiOlsiXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cbi8qIGZ1bGwgd2F5IG9mIHdyaXRpbmcgdGhlIHNlbGVjdG9yLCBicmVha2luZyBpdCBkb3duIGludG8gaXRzIEJFTSBwYXJ0cyovXG4ubXl0aGVtZSB7IC8qIG5hbWVzcGFjZSovXG4gICZfX2N1c3RvbVRhYiB7IC8qIEJsb2NrKi9cbiAgICAmX190ZXh0IHsgLyogRWxlbWVudCovXG4gICAgICAmLS1yZW5kZXJlZCB7IC8qIE1vZGlmaWVyKi9cbiAgICAgICAgY29sb3I6IHZhcigtLW15dGhlbWUtY29sb3IpOyAvKiB0aGlzIGlzIHNldCBpbiBgdGhlbWVfbXl0aGVtZS9zcmMvZ2xvYmFsX3N0eWxlcy9fdmFyaWFibGVzLnNjc3NgKi9cbiAgICAgIH1cbiAgICB9XG4gIH1cbn1cbi8qIGNvbmRlbnNlZCB3YXkgb2Ygd3JpdGluZyB0aGUgc2VsZWN0b3IuLi4qL1xuLm15dGhlbWVfX2N1c3RvbVRhYl9fdGV4dC0tcmVuZGVyZWQge1xuICBjb2xvcjogdmFyKC0tbXl0aGVtZS1jb2xvcik7XG59XG4iXSwic291cmNlUm9vdCI6IiJ9
