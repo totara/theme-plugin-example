@@ -26,6 +26,8 @@ rather than override it completely.
 
 Not going to add a `<style />` block, you can see that in action in this theme's
 SettingsFormMyTheme.vue file.
+
+More reading: https://help.totaralearning.com/display/DEV/Creating+custom+themes
 -->
 
 <template>
