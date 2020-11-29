@@ -1,0 +1,64 @@
+/* This file is part of Totara Enterprise Extensions.*/
+/**/
+/* Copyright (C) 2020 onwards Totara Learning Solutions LTD*/
+/**/
+/* Totara Enterprise Extensions is provided only to Totara*/
+/* Learning Solutions LTD's customers and partners, pursuant to*/
+/* the terms and conditions of a separate agreement with Totara*/
+/* Learning Solutions LTD or its affiliate.*/
+/**/
+/* If you do not have an agreement with Totara Learning Solutions*/
+/* LTD, you may not access, use, modify, or distribute this software.*/
+/* Please contact [licensing@totaralearning.com] for more information.*/
+/**/
+/* @author Dave Wallace <dave.wallace@totaralearning.com>*/
+/* @package theme_example*/
+
+/* This variable file includes special comments with the syntax `theme:var` and*/
+/* `theme:derive`.*/
+/**/
+/* `theme:var` comments tell the build system that this is a configurable*/
+/* variable and causes information about it to be exported. This is neccesary*/
+/* for it to show up in the theme panel.*/
+/**/
+/* `theme:derive` comments add information to the entry for a theme:var variable*/
+/* telling the theme panel that it is derived from another variable.*/
+/* This informatation is used to generate a new value for the variable if the*/
+/* value of any variable it is derived from has changed.*/
+
+:root {
+  /**/
+  /* Theme colours*/
+  /**/
+
+  /* Primary colour*/
+  /* Often used for default image, backgrounds, line separators & visual indicators*/
+  /* theme:var */
+  --color-primary: #963737;
+
+  /* Secondary colour*/
+  /* Often used for visual components such as progress bars & charts*/
+  /* theme:var */
+  --color-secondary: #aa1291;
+
+  /* Tertiary colour*/
+  /* Often used for visual components, must have high contrast to background*/
+  /* theme:var */
+  --color-tertiary: #443397;
+
+  /**/
+  /* Interactive state colours*/
+  /**/
+
+  /* Default state colour, shows an element is interactive*/
+  /* theme:var */
+  --color-state: #4497f0;
+
+  /**/
+  /* Miscellaneous variables not respresented in the Theme Settings UI*/
+  /**/
+  --example-color: #FF6650;
+}
+
+
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8vLi9jbGllbnQvY29tcG9uZW50L3RoZW1lX2V4YW1wbGUvc3JjL2dsb2JhbF9zdHlsZXMvX3ZhcmlhYmxlcy5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBIiwiZmlsZSI6ImNsaWVudC9jb21wb25lbnQvdGhlbWVfZXhhbXBsZS9idWlsZC9nbG9iYWxfc3R5bGVzL192YXJpYWJsZXMuZGV2ZWxvcG1lbnQuc2NzcyIsInNvdXJjZXNDb250ZW50IjpbIi8qIFRoaXMgZmlsZSBpcyBwYXJ0IG9mIFRvdGFyYSBFbnRlcnByaXNlIEV4dGVuc2lvbnMuKi9cbi8qKi9cbi8qIENvcHlyaWdodCAoQykgMjAyMCBvbndhcmRzIFRvdGFyYSBMZWFybmluZyBTb2x1dGlvbnMgTFREKi9cbi8qKi9cbi8qIFRvdGFyYSBFbnRlcnByaXNlIEV4dGVuc2lvbnMgaXMgcHJvdmlkZWQgb25seSB0byBUb3RhcmEqL1xuLyogTGVhcm5pbmcgU29sdXRpb25zIExURCdzIGN1c3RvbWVycyBhbmQgcGFydG5lcnMsIHB1cnN1YW50IHRvKi9cbi8qIHRoZSB0ZXJtcyBhbmQgY29uZGl0aW9ucyBvZiBhIHNlcGFyYXRlIGFncmVlbWVudCB3aXRoIFRvdGFyYSovXG4vKiBMZWFybmluZyBTb2x1dGlvbnMgTFREIG9yIGl0cyBhZmZpbGlhdGUuKi9cbi8qKi9cbi8qIElmIHlvdSBkbyBub3QgaGF2ZSBhbiBhZ3JlZW1lbnQgd2l0aCBUb3RhcmEgTGVhcm5pbmcgU29sdXRpb25zKi9cbi8qIExURCwgeW91IG1heSBub3QgYWNjZXNzLCB1c2UsIG1vZGlmeSwgb3IgZGlzdHJpYnV0ZSB0aGlzIHNvZnR3YXJlLiovXG4vKiBQbGVhc2UgY29udGFjdCBbbGljZW5zaW5nQHRvdGFyYWxlYXJuaW5nLmNvbV0gZm9yIG1vcmUgaW5mb3JtYXRpb24uKi9cbi8qKi9cbi8qIEBhdXRob3IgRGF2ZSBXYWxsYWNlIDxkYXZlLndhbGxhY2VAdG90YXJhbGVhcm5pbmcuY29tPiovXG4vKiBAcGFja2FnZSB0aGVtZV9leGFtcGxlKi9cblxuLyogVGhpcyB2YXJpYWJsZSBmaWxlIGluY2x1ZGVzIHNwZWNpYWwgY29tbWVudHMgd2l0aCB0aGUgc3ludGF4IGB0aGVtZTp2YXJgIGFuZCovXG4vKiBgdGhlbWU6ZGVyaXZlYC4qL1xuLyoqL1xuLyogYHRoZW1lOnZhcmAgY29tbWVudHMgdGVsbCB0aGUgYnVpbGQgc3lzdGVtIHRoYXQgdGhpcyBpcyBhIGNvbmZpZ3VyYWJsZSovXG4vKiB2YXJpYWJsZSBhbmQgY2F1c2VzIGluZm9ybWF0aW9uIGFib3V0IGl0IHRvIGJlIGV4cG9ydGVkLiBUaGlzIGlzIG5lY2Nlc2FyeSovXG4vKiBmb3IgaXQgdG8gc2hvdyB1cCBpbiB0aGUgdGhlbWUgcGFuZWwuKi9cbi8qKi9cbi8qIGB0aGVtZTpkZXJpdmVgIGNvbW1lbnRzIGFkZCBpbmZvcm1hdGlvbiB0byB0aGUgZW50cnkgZm9yIGEgdGhlbWU6dmFyIHZhcmlhYmxlKi9cbi8qIHRlbGxpbmcgdGhlIHRoZW1lIHBhbmVsIHRoYXQgaXQgaXMgZGVyaXZlZCBmcm9tIGFub3RoZXIgdmFyaWFibGUuKi9cbi8qIFRoaXMgaW5mb3JtYXRhdGlvbiBpcyB1c2VkIHRvIGdlbmVyYXRlIGEgbmV3IHZhbHVlIGZvciB0aGUgdmFyaWFibGUgaWYgdGhlKi9cbi8qIHZhbHVlIG9mIGFueSB2YXJpYWJsZSBpdCBpcyBkZXJpdmVkIGZyb20gaGFzIGNoYW5nZWQuKi9cblxuOnJvb3Qge1xuICAvKiovXG4gIC8qIFRoZW1lIGNvbG91cnMqL1xuICAvKiovXG5cbiAgLyogUHJpbWFyeSBjb2xvdXIqL1xuICAvKiBPZnRlbiB1c2VkIGZvciBkZWZhdWx0IGltYWdlLCBiYWNrZ3JvdW5kcywgbGluZSBzZXBhcmF0b3JzICYgdmlzdWFsIGluZGljYXRvcnMqL1xuICAvKiB0aGVtZTp2YXIgKi9cbiAgLS1jb2xvci1wcmltYXJ5OiAjOTYzNzM3O1xuXG4gIC8qIFNlY29uZGFyeSBjb2xvdXIqL1xuICAvKiBPZnRlbiB1c2VkIGZvciB2aXN1YWwgY29tcG9uZW50cyBzdWNoIGFzIHByb2dyZXNzIGJhcnMgJiBjaGFydHMqL1xuICAvKiB0aGVtZTp2YXIgKi9cbiAgLS1jb2xvci1zZWNvbmRhcnk6ICNhYTEyOTE7XG5cbiAgLyogVGVydGlhcnkgY29sb3VyKi9cbiAgLyogT2Z0ZW4gdXNlZCBmb3IgdmlzdWFsIGNvbXBvbmVudHMsIG11c3QgaGF2ZSBoaWdoIGNvbnRyYXN0IHRvIGJhY2tncm91bmQqL1xuICAvKiB0aGVtZTp2YXIgKi9cbiAgLS1jb2xvci10ZXJ0aWFyeTogIzQ0MzM5NztcblxuICAvKiovXG4gIC8qIEludGVyYWN0aXZlIHN0YXRlIGNvbG91cnMqL1xuICAvKiovXG5cbiAgLyogRGVmYXVsdCBzdGF0ZSBjb2xvdXIsIHNob3dzIGFuIGVsZW1lbnQgaXMgaW50ZXJhY3RpdmUqL1xuICAvKiB0aGVtZTp2YXIgKi9cbiAgLS1jb2xvci1zdGF0ZTogIzQ0OTdmMDtcblxuICAvKiovXG4gIC8qIE1pc2NlbGxhbmVvdXMgdmFyaWFibGVzIG5vdCByZXNwcmVzZW50ZWQgaW4gdGhlIFRoZW1lIFNldHRpbmdzIFVJKi9cbiAgLyoqL1xuICAtLWV4YW1wbGUtY29sb3I6ICNGRjY2NTA7XG59XG4iXSwic291cmNlUm9vdCI6IiJ9

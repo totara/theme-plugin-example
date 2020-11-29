@@ -1,0 +1,36 @@
+{{!
+   This file is part of Totara LMS
+
+   Copyright (C) 2020 onwards Totara Learning Solutions LTD
+
+   This program is free software; you can redistribute it and/or modify
+   it under the terms of the GNU General Public License as published by
+   the Free Software Foundation; either version 3 of the License, or
+   (at your option) any later version.
+
+   This program is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See  the
+   GNU General Public License for more details.
+
+   You should have received a copy of the GNU General Public License
+   along with this program.  If not, see <http://www.gnu.org/licenses/>.
+}}
+{{!
+    This file demonstrates Mustache template overriding, as with Totara
+    version 12. The className `totaraNav--customised` has been added and
+    the selector used to customise the site primary navigation in a .scss
+    file located here:
+`/client/component/theme_example/global_styles/t12_theme_styles/totara/nav.scss`
+}}
+<div class="totaraNav totaraNav--customised">
+    {{#masthead_menu}}
+        {{> totara_core/nav_primary }}
+        {{#subnav_has_items}}{{> totara_core/nav_sub }}{{/subnav_has_items}}
+        {{#js}}
+            require(['totara_core/totaranav'], function(totaraNav) {
+                totaraNav.init(document.querySelector('.totaraNav'));
+            });
+        {{/js}}
+    {{/masthead_menu}}
+</div>
