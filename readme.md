@@ -30,5 +30,7 @@ directory within your Totara 13 codebase
 
 ## Documentation
 Documentation is available on the [Totara public developer documentation](https://help.totaralearning.com/display/DEV/Tui+front-end+framework)
-website. Improvements and feedback are welcome, please submit your feedback to
-the Totara Support team.
+website, covering architectural goals, technology stack and more dtetail on
+custom themes. Improvements and feedback are welcome, both for this example and
+the public developer documentation, please submit your feedback to the Totara
+Support team.
