@@ -1,6 +1,6 @@
 # Totara TXP Example Theme
 This repository contains an example theme for illustrative purposes only.
-It should not be installed and used, but reference and copied in creating your own theme.
+It should not be installed and used, but referenced and copied in creating your own theme.
 
 ## Implementation
 The example implements both the `/server/theme/` and `/client/component/`
@@ -32,7 +32,7 @@ directory within your Totara 13 codebase
 
 ## Documentation
 Documentation is available on the [Totara public developer documentation](https://help.totaralearning.com/display/DEV/Tui+front-end+framework)
-website, covering architectural goals, technology stack and more dtetail on
+website, covering architectural goals, technology stack and more detail on
 custom themes. Improvements and feedback are welcome, both for this example and
 the public developer documentation, please submit your feedback to the Totara
 Support team.
