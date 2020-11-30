@@ -25,6 +25,8 @@ Steps:
 directory within your Totara 13 codebase
  - Copy the example `/client/component/theme_example` into the `/client/component/`
  directory within your Totara codebase.
+ - Rename all references of `example` to `yourthemename` in directory names,
+ file names and file contents, for example method and variable names.
  - Follow `npm` setup instructions in `/readme.md` within the root directory of
  your Totara 13 codebase
 
