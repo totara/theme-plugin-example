@@ -67,7 +67,7 @@ function theme_example_extend_navigation_category_settings($navigation, $context
         $url,
         navigation_node::NODETYPE_LEAF,
         null,
-        'theme_example_editor',
+        'example_editor',
         new pix_icon('i/settings', '')
     );
 

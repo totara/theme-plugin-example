@@ -24,7 +24,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $settings = new admin_externalpage(
-    'theme_example_editor',
+    'example_editor',
     new lang_string('pluginname', 'theme_example'),
     $CFG->wwwroot . '/theme/example/index.php',
     'totara/tui:themesettings'
