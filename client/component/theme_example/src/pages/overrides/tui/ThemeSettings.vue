@@ -72,6 +72,7 @@ More reading: https://help.totaralearning.com/display/DEV/Creating+custom+themes
             content-spacing="large"
           >
             <Tab
+              v-if="canEditCategory('brand')"
               :id="'themesettings-tab-0'"
               :name="$str('tabbrand', 'totara_tui')"
               :always-render="true"
@@ -82,10 +83,16 @@ More reading: https://help.totaralearning.com/display/DEV/Creating+custom+themes
                 :file-form-field-data="embeddedFormData.fileData"
                 :is-saving="isSaving"
                 :context-id="embeddedFormData.contextId"
+                :selected-tenant-id="selectedTenantId"
+                :customizable-tenant-settings="
+                  customizableTenantCategorySettings('brand')
+                "
+                @mounted="setInitialTenantCategoryValues"
                 @submit="submit"
               />
             </Tab>
             <Tab
+              v-if="canEditCategory('colours')"
               :id="'themesettings-tab-1'"
               :name="$str('tabcolours', 'totara_tui')"
               :always-render="true"
@@ -100,11 +107,15 @@ More reading: https://help.totaralearning.com/display/DEV/Creating+custom+themes
                   embeddedFormData.mergedProcessedCSSVariableData
                 "
                 :is-saving="isSaving"
+                :customizable-tenant-settings="
+                  customizableTenantCategorySettings('colours')
+                "
+                @mounted="setInitialTenantCategoryValues"
                 @submit="submit"
               />
             </Tab>
             <Tab
-              v-if="!selectedTenantId"
+              v-if="canEditCategory('images')"
               :id="'themesettings-tab-2'"
               :name="$str('tabimages', 'totara_tui')"
               :always-render="true"
@@ -116,11 +127,16 @@ More reading: https://help.totaralearning.com/display/DEV/Creating+custom+themes
                 :file-form-field-data="embeddedFormData.fileData"
                 :is-saving="isSaving"
                 :context-id="embeddedFormData.contextId"
+                :selected-tenant-id="selectedTenantId"
+                :customizable-tenant-settings="
+                  customizableTenantCategorySettings('images')
+                "
+                @mounted="setInitialTenantCategoryValues"
                 @submit="submit"
               />
             </Tab>
             <Tab
-              v-if="!selectedTenantId"
+              v-if="canEditCategory('custom')"
               :id="'themesettings-tab-3'"
               :name="$str('tabcustom', 'totara_tui')"
               :always-render="true"
@@ -130,6 +146,11 @@ More reading: https://help.totaralearning.com/display/DEV/Creating+custom+themes
                 v-if="embeddedFormData.formFieldData.custom"
                 :saved-form-field-data="embeddedFormData.formFieldData.custom"
                 :is-saving="isSaving"
+                :selected-tenant-id="selectedTenantId"
+                :customizable-tenant-settings="
+                  customizableTenantCategorySettings('custom')
+                "
+                @mounted="setInitialTenantCategoryValues"
                 @submit="submit"
               />
             </Tab>
@@ -176,5 +197,5 @@ export default {
   components: {
     SettingsForm,
   },
-}
+};
 </script>
