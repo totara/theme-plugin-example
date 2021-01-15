@@ -18,7 +18,7 @@
 
 <template>
   <div class="example__customTab">
-    <p class="example__customTab__text--rendered">{{helloworld}}</p>
+    <p class="example__customTab__text--rendered">{{ helloworld }}</p>
   </div>
 </template>
 
@@ -34,11 +34,17 @@ export default {
 
 <style lang="scss">
 // full way of writing the selector, breaking it down into its BEM parts
-.example { // namespace
-  &__customTab { // Block
-    &__text { // Element
-      &--rendered { // Modifier
-        color: var(--example-color); // this is set in `theme_example/src/global_styles/_variables.scss`
+.example {
+  // namespace
+  &__customTab {
+    // Block
+    &__text {
+      // Element
+      &--rendered {
+        // Modifier
+        color: var(
+          --example-color
+        ); // this is set in `theme_example/src/global_styles/_variables.scss`
       }
     }
   }
