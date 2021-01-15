@@ -15,6 +15,26 @@
     "color-state": {
       "type": "value",
       "value": "#4497f0"
+    },
+    "footer-bg-color": {
+      "type": "value",
+      "value": "#ffffff"
+    },
+    "footer-text-color": {
+      "type": "var",
+      "value": "color-text"
+    },
+    "footer-text-color-hover": {
+      "type": "var",
+      "value": "footer-text-color",
+      "transform": {
+        "source": "footer-text-color",
+        "type": "var",
+        "call": "adjust-hex-value-brightness",
+        "args": [
+          -10
+        ]
+      }
     }
   }
 }
