@@ -29,3 +29,4 @@ $THEME->parents = ['ventura', 'legacy', 'base'];
 $THEME->enable_dock = true;
 $THEME->enable_hide = true;
 $THEME->minify_css = false;
+$THEME->sheets = ['raw','scss'];
