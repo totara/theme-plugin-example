@@ -31,3 +31,9 @@ $string['region-side-post'] = 'Right';
 $string['region-side-pre'] = 'Left';
 $string['region-top'] = 'Top';
 $string['theme_manage'] = 'Theme management';
+
+// Example file tab
+$string['example_image'] = 'Example image';
+$string['formexamplefiles_details_examplefile'] = 'Example details';
+$string['formexamplefiles_label_examplefile'] = 'Example image';
+$string['tab_example_file'] = 'Example file';

@@ -172,6 +172,29 @@ More reading: https://help.totaralearning.com/display/DEV/Creating+custom+themes
               -->
               <SettingsForm />
             </Tab>
+
+            <!--
+              Lets add a new tab with a file example, the file will refer to
+              the example file we created under the theme directory.
+            -->
+            <Tab
+              :id="'themesettings-tab-5'"
+              :name="$str('tab_example_file', 'theme_example')"
+              :always-render="true"
+              :disabled="!customCSSEnabled"
+            >
+              <SettingsFormExampleFile
+                :saved-form-field-data="embeddedFormData.formFieldData.example_file"
+                :file-form-field-data="embeddedFormData.fileData"
+                :is-saving="isSaving"
+                :selected-tenant-id="selectedTenantId"
+                :customizable-tenant-settings="
+                  customizableTenantCategorySettings('example_file')
+                "
+                @mounted="setInitialTenantCategoryValues"
+                @submit="submit"
+              />
+            </Tab>
           </Tabs>
         </div>
       </Loader>
@@ -193,9 +216,19 @@ animation library and building that into a component, etc.
 -->
 <script extends>
 import SettingsForm from 'theme_example/components/theme_settings/SettingsForm';
+import SettingsFormExampleFile from 'theme_example/components/theme_settings/SettingsFormExampleFile';
 export default {
   components: {
     SettingsForm,
+    SettingsFormExampleFile
   },
 };
 </script>
+
+<lang-strings>
+{
+  "theme_example": [
+    "tab_example_file"
+  ]
+}
+</lang-strings>

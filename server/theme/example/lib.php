@@ -21,6 +21,8 @@
  * @package theme_example
  */
 
+use core\theme\file\theme_file;
+
 defined('MOODLE_INTERNAL') || die();
 
 /**
@@ -87,4 +89,31 @@ function theme_example_extend_navigation_category_settings($navigation, $context
         $appearance->force_open();
         $node->make_active();
     }
+}
+
+/**
+ * To download the file we upload in theme_example filearea
+ *
+ * @param stdClass$course
+ * @param stdClass $cm
+ * @param context $context
+ * @param string $filearea
+ * @param array $args
+ * @param bool$forcedownload
+ * @param array $options
+ * @return void Download the file
+ */
+function theme_example_pluginfile($course, $cm, $context, $filearea, $args, $forcedownload, $options = []) {
+    $component = 'theme_example';
+    $itemid = $args[0];
+    $filename = $args[1];
+    $fs = get_file_storage();
+
+    $file = $fs->get_file($context->id, $component, $filearea, $itemid, '/', $filename);
+
+    if (empty($file)) {
+        send_file_not_found();
+    }
+
+    send_stored_file($file, 60*60*24, 0, false, $options); // Enable long cache and disable forcedownload.
 }
