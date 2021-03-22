@@ -72,14 +72,14 @@ class example_file extends theme_file {
     /**
      * @inheritDoc
      */
-    public static function get_component(): string {
+    public function get_component(): string {
         return 'theme_example';
     }
 
     /**
      * @inheritDoc
      */
-    public static function get_area(): string {
+    public function get_area(): string {
         return 'example_image';
     }
 
