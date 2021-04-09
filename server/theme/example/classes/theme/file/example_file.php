@@ -63,13 +63,6 @@ class example_file extends theme_file {
     }
 
     /**
-     * @return bool
-     */
-    public function is_enabled(): bool {
-        return true;
-    }
-
-    /**
      * @inheritDoc
      */
     public function get_component(): string {
@@ -107,7 +100,7 @@ class example_file extends theme_file {
     /**
      * @inheritDoc
      */
-    protected function get_default_context(?int $tenant_id = null): ?context {
+    protected function get_default_context(bool $determine_tenant_branding = true): ?context {
         // This item is only configurable on the system level at the moment
         return \context_system::instance();
     }
