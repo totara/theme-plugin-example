@@ -178,6 +178,7 @@ More reading: https://help.totaralearning.com/display/DEV/Creating+custom+themes
               the example file we created under the theme directory.
             -->
             <Tab
+              v-if="embeddedFormData.formFieldData.example_file"
               :id="'themesettings-tab-5'"
               :name="$str('tab_example_file', 'theme_example')"
               :always-render="true"

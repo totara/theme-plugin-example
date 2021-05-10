@@ -60,7 +60,7 @@ function theme_example_extend_navigation_category_settings($navigation, $context
 
     $url = new moodle_url('/totara/tui/theme_settings.php',
         [
-            'theme' => 'example',
+            'theme_name' => 'example',
             'tenant_id' => $tenant->id,
         ]
     );

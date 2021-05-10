@@ -101,8 +101,8 @@ class example_file extends theme_file {
      * @inheritDoc
      */
     protected function get_default_context(?int $unused = null, ?bool $determine_tenant_branding = true): ?context {
-	// This example shows that you can override this function to limit a specific theme file
-	// to system context only, which means this file cannot be updated for a tenant.
+        // This example shows that you can override this function to limit a specific theme file
+        // to system context only, which means this file cannot be updated for a tenant.
         return \context_system::instance();
     }
 
