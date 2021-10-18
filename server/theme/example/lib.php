@@ -21,8 +21,6 @@
  * @package theme_example
  */
 
-use core\theme\file\theme_file;
-
 defined('MOODLE_INTERNAL') || die();
 
 /**
@@ -44,6 +42,10 @@ function theme_example_extend_navigation_category_settings($navigation, $context
     }
 
     if (!($context instanceof context_coursecat)) {
+        return;
+    }
+
+    if ($PAGE->theme->name !== 'example') {
         return;
     }
 

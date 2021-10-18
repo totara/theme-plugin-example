@@ -41,6 +41,11 @@ final class customizable_theme_settings_watcher {
     public static function customize_tenant_category_settings(tenant_customizable_theme_settings_hook $hook) {
         $settings = $hook->get_customizable_settings();
 
+        // Only apply if this is the example theme.
+        if ($hook->get_theme_config()->name !== 'example') {
+            return;
+        }
+
         // Add our example file tab.
         $settings['example_file'] = '*';
 

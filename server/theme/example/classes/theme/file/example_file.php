@@ -106,4 +106,11 @@ class example_file extends theme_file {
         return \context_system::instance();
     }
 
+    /**
+     * @return bool
+     */
+    public function is_enabled(): bool {
+        return $this->get_theme_config()->name === 'example';
+    }
+
 }
