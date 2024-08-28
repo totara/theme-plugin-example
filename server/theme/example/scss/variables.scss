@@ -21,12 +21,7 @@
 // @author    Dave Wallace <dave.wallace@totara.com>
 // @package   theme_example
 
-@import 'variables.scss';
-
-body {
-    background-color: aliceblue;
-}
-
-.block {
-    border-radius: var(--border-radius-normal);
+:root {
+    --border-width-thin: 4px;
+    --border-radius-normal: 0;
 }

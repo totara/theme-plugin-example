@@ -2,7 +2,7 @@
 /*
  * This file is part of Totara Learn
  *
- * Copyright (C) 2020 onwards Totara Learning Solutions LTD
+ * Copyright (C) 2024 onwards Totara Learning Solutions LTD
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -17,7 +17,7 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  *
- * @author Dave Wallace <dave.wallace@totaralearning.com>
+ * @author Dave Wallace <dave.wallace@totara.com>
  * @package theme_example
  */
 
@@ -25,8 +25,8 @@ defined('MOODLE_INTERNAL' || die());
 
 $THEME->doctype = 'html5';
 $THEME->name = 'example';
-$THEME->parents = ['ventura', 'legacy', 'base'];
-$THEME->enable_dock = true;
-$THEME->enable_hide = true;
+$THEME->parents = ['inspire', 'legacy', 'base'];
+$THEME->enable_dock = false;
+$THEME->enable_hide = false;
 $THEME->minify_css = false;
 $THEME->sheets = ['raw','scss'];

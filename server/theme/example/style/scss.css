@@ -1,1 +1,1 @@
-body{background-color:#f0f8ff}
+:root{--border-width-thin: 4px;--border-radius-normal: 0}body{background-color:#f0f8ff}.block{border-radius:var(--border-radius-normal)}

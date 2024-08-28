@@ -1,7 +1,7 @@
 <!--
   This file is part of Totara Enterprise Extensions.
 
-  Copyright (C) 2023 onwards Totara Learning Solutions LTD
+  Copyright (C) 2024 onwards Totara Learning Solutions LTD
 
   Totara Enterprise Extensions is provided only to Totara
   Learning Solutions LTD's customers and partners, pursuant to
@@ -10,7 +10,7 @@
 
   If you do not have an agreement with Totara Learning Solutions
   LTD, you may not access, use, modify, or distribute this software.
-  Please contact [licensing@totaralearning.com] for more information.
+  Please contact [licensing@totara.com] for more information.
 
   @module tui
 -->
