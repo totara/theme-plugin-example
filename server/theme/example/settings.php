@@ -21,9 +21,11 @@
  * @package theme_example
  */
 
+use core\setting\page\externalpage;
+
 defined('MOODLE_INTERNAL') || die();
 
-$settings = new admin_externalpage(
+$settings = new externalpage(
     'example_editor',
     new lang_string('pluginname', 'theme_example'),
     $CFG->wwwroot . '/theme/example/index.php',
