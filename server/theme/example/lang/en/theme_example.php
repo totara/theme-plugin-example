@@ -2,7 +2,7 @@
 /*
  * This file is part of Totara Learn
  *
- * Copyright (C) 2024 onwards Totara Learning Solutions LTD
+ * Copyright (C) 2026 onwards Totara Learning Solutions LTD
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -23,7 +23,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['choosereadme'] = 'Example, a custom theme for Totara 13.';
+$string['choosereadme'] = 'Example, a custom theme for Totara 20.';
 $string['pluginname'] = 'Example theme';
 $string['region-bottom'] = 'Bottom';
 $string['region-main'] = 'Main';
@@ -31,9 +31,3 @@ $string['region-side-post'] = 'Right';
 $string['region-side-pre'] = 'Left';
 $string['region-top'] = 'Top';
 $string['theme_manage'] = 'Theme management';
-
-// Example file tab
-$string['example_image'] = 'Example image';
-$string['formexamplefiles_details_examplefile'] = 'Example details';
-$string['formexamplefiles_label_examplefile'] = 'Example image';
-$string['tab_example_file'] = 'Example file';

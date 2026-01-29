@@ -8,7 +8,7 @@ portions of the custom Theme. The `/client/component/` portion includes examples
 of Tui (Vue) component overrides at a page and smaller component level, as well as CSS
 variable and SCSS overrides and extensions. The `/server/theme/` portion
 includes the PHP config and an example of Mustache template overriding used
-throughout Totara Learn.
+throughout Totara Suite.
 
 ## Licensing
 The `/server/theme/` portion is licensed under GPLv3, while the
@@ -22,13 +22,13 @@ structure for both `/server/theme/` and `/client/component/` portions.
 
 Steps:
  - Copy the example `/server/theme/example` into the `/server/theme/`
-directory within your Totara 13 codebase
+directory within your Totara 20 codebase
  - Copy the example `/client/component/theme_example` into the `/client/component/`
  directory within your Totara codebase.
  - Rename all references of `example` to `yourthemename` in directory names,
  file names and file contents, for example method and variable names.
  - Follow `npm` setup instructions in `/readme.md` within the root directory of
- your Totara 13 codebase
+ your Totara 20 codebase
 
 ## Documentation
 Documentation is available on the [Totara public developer documentation](https://help.totaralearning.com/display/DEV/Tui+front-end+framework)
