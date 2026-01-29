@@ -27,6 +27,20 @@ body {
     background-color: aliceblue;
 }
 
-.block {
-    border-radius: var(--border-radius-normal);
+.theme_example {
+    .block {
+        /* Reference a global CSS Variable, supplied by an inherited Theme, to
+        improve design consistency across the platform */
+        background-color: var(--color-neutral-2);
+    }
+
+    &-block__header-override {
+        /* ClassName supplied in Block mustache file within this Theme, which
+        overrides the inherited Legacy mustache */
+        display: block;
+        background-color: var(--example-color);
+        border-radius: var(--border-radius-small);
+        padding: var(--gap-1) var(--gap-2);
+        color: var(--color-neutral-1);
+    }
 }

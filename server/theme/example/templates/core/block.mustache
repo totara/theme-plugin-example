@@ -1,7 +1,7 @@
 {{!
    This file is part of Totara LMS
 
-   Copyright (C) 2024 onwards Totara Learning Solutions LTD
+   Copyright (C) 2015 onwards Totara Learning Solutions LTD
 
    This program is free software; you can redistribute it and/or modify
    it under the terms of the GNU General Public License as published by
@@ -47,7 +47,8 @@
         "header":{
             "title":{
                 "text":"Example block",
-                "id":"instance-123-header"
+                "id":"instance-123-header",
+                "aria_label": null
             },
             "controls":{
                 "control_output":"<div id='action-menu-1'> ... </div>"
@@ -73,7 +74,13 @@
         <div class="title block-title" data-dock-title="{{{dock_title}}}">
             <div class="block_action" {{#collapsible}}data-collapsible="1"{{/collapsible}}></div>
             {{#title}}
-                <h2 id="{{id}}" data-movetext="true">Block! {{{text}}}</h2>
+            {{^supplementary}}
+                <h2 id="{{id}}" data-movetext="true"{{#aria_label}} aria-label="{{aria_label}}"{{/aria_label}}>{{{text}}}</h2>
+            {{/supplementary}}
+            {{#supplementary}}
+                <h2 id="{{id}}" data-movetext="true"{{#aria_label}} aria-label="{{aria_label}}"{{/aria_label}}><span>{{{text}}}</span><span class="block-title-supplementary"> {{supplementary}}</span></h2>
+            {{/supplementary}}
+            <span class="theme_example-block__header-override">(Custom Mustache override)</span>
             {{/title}}
         </div>
     </div>

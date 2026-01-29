@@ -20,6 +20,8 @@
  * @package theme_example
  */
 
-body {
-    padding-top: 20px;
+.page-body {
+    /** This file contains CSS rules that are not run through the SCSS
+        compiler via Grunt. This file is still cached, however.   **/
+    border-top: 16px solid var(--example-color);
 }

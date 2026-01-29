@@ -22,6 +22,8 @@
 // @package   theme_example
 
 :root {
+    /* Override global CSS Variables that have been set by an inherited
+       parent Theme */
     --border-width-thin: 4px;
-    --border-radius-normal: 0;
+    --border-radius-normal: 2px;
 }
