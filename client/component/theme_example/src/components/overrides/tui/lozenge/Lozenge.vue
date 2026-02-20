@@ -19,14 +19,14 @@
 
 <script setup>
 const props = defineProps({
-    text: {
-      required: true,
-      type: String,
-    },
-    type: {
-      default: 'info',
-      type: String,
-    },
+  text: {
+    required: true,
+    type: String,
+  },
+  type: {
+    default: 'info',
+    type: String,
+  },
 });
 </script>
 

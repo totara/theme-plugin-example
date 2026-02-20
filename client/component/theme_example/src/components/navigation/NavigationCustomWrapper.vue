@@ -41,10 +41,8 @@ const props = defineProps({
 </script>
 
 <template>
-    <div class="theme_example-navInfo">(Custom Vue component)</div>
-    <InspireNavigation
-      v-bind="props"
-    />
+  <div class="theme_example-navInfo">(Custom Vue component)</div>
+  <InspireNavigation v-bind="props" />
 </template>
 
 <style lang="scss">
