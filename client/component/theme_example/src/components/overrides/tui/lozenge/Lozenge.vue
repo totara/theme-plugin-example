@@ -15,20 +15,10 @@
   @module theme_example
 -->
 
-<!-- Define a component to replace the one in core -->
+<!-- This file defines a component to override the original core component -->
 
-<template>
-  <div
-    class="tui-theme_example-lozenge"
-    :class="['tui-theme_example-lozenge--' + type]"
-  >
-    {{ text }}
-  </div>
-</template>
-
-<script>
-export default {
-  props: {
+<script setup>
+const props = defineProps({
     text: {
       required: true,
       type: String,
@@ -37,16 +27,26 @@ export default {
       default: 'info',
       type: String,
     },
-  },
-};
+});
 </script>
+
+<template>
+  <div
+    class="tui-theme_example-lozenge"
+    :class="['tui-theme_example-lozenge--' + type]"
+    v-bind="props"
+  >
+    {{ text }}
+  </div>
+</template>
 
 <style lang="scss">
 .tui-theme_example-lozenge {
+  @include font(body-sm);
+
   display: inline-flex;
   padding: 3px var(--gap-2) 3px;
   color: var(--color-neutral-1);
-  font-size: var(--font-heading-size);
   line-height: 1;
   background: var(--color-prompt-info);
   border-radius: 50px;

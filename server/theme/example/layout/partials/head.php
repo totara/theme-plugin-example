@@ -1,6 +1,6 @@
 <?php
-/*
- * This file is part of Totara Learn
+/**
+ * This file is part of Totara Talent Experience Platform
  *
  * Copyright (C) 2026 onwards Totara Learning Solutions LTD
  *
@@ -21,13 +21,14 @@
  * @package theme_example
  */
 
-defined('MOODLE_INTERNAL' || die());
+defined('MOODLE_INTERNAL') || die();
 
-$THEME->doctype = 'html5';
-$THEME->name = 'example';
-$THEME->parents = ['inspire', 'legacy', 'base'];
-$THEME->enable_dock = false;
-$THEME->enable_hide = false;
-$THEME->minify_css = false;
-$THEME->sheets = ['raw','scss'];
-$THEME->rendererfactory = 'theme_overridden_renderer_factory';
+$themerenderer->preload();
+
+?>
+<head>
+    <title><?php echo $OUTPUT->page_title(); ?></title>
+    <link rel="shortcut icon" href="<?php echo $OUTPUT->favicon(); ?>" />
+    <?php echo $OUTPUT->standard_head_html(); ?>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimal-ui">
+</head>
