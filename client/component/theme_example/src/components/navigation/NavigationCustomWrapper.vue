@@ -26,23 +26,14 @@ etc, without modifying the original Inspire Navigation component code.
 -->
 
 <script setup>
+import { useAttrs } from 'vue';
 import InspireNavigation from 'theme_inspire/components/navigation/Navigation';
-
-const props = defineProps({
-  iconsEnabled: Boolean,
-  initialState: String,
-  logoAlt: String,
-  logoMark: String,
-  logoUrl: String,
-  menuData: Array,
-  placeholderId: String,
-  siteUrl: String,
-});
+const attrs = useAttrs();
 </script>
 
 <template>
   <div class="theme_example-navInfo">(Custom Vue component)</div>
-  <InspireNavigation v-bind="props" />
+  <InspireNavigation v-bind="attrs" />
 </template>
 
 <style lang="scss">
