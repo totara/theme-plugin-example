@@ -1,0 +1,26 @@
+{
+    "name": "totara/theme-example",
+    "description": "Example theme plugin for Totara TXP",
+    "type": "totara-theme",
+    "keywords": [
+        "totara",
+        "example"
+    ],
+    "homepage": "https://www.totara.com/",
+    "license": "GPL-3.0-or-later",
+    "authors": [],
+    "support": {
+        "email": "support@totara.com",
+        "issues": "https://github.com/totara/theme-plugin-example/issues",
+        "docs": "https://github.com/totara/theme-plugin-example/blob/t20-release/readme.md"
+    },
+    "require": {
+        "totara/core": "^20.0"
+    },
+    "extra": {
+        "installer-name": "example",
+        "totara-marketplace": {
+            "unlisted": true
+        }
+    }
+}
